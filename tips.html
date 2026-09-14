@@ -3,48 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan HTML — Minggu 3</title>
+    <title>Tips Belajar HTML untuk Pemula</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Halo dari HTML!</h1>
-    <!-- Heading: h1 sampai h6 -->
-<h1>Ini Heading 1 (Judul Utama)</h1>
-<h2>Ini Heading 2 (Judul Section)</h2>
-<h3>Ini Heading 3 (Sub-judul)</h3>
 
-<!-- Paragraph -->
-<p>Ini adalah paragraf biasa. HTML menggunakan tag untuk mendefinisikan konten.</p>
-<p>Paragraf kedua. Setiap tag <code>&lt;p&gt;</code> akan membuat baris baru.</p>
+    <!-- HEADER: Berisi navigasi -->
+    <header>
+        <h1>Tips Belajar HTML untuk Pemula</h1>
+        <nav>
+            <ul>
+                <li><a href="#penting">Mengapa Penting</a></li>
+                <li><a href="#tips">Tips Pertama</a></li>
+                <li><a href="#kesalahan">Kesalahan Umum</a></li>
+                <li><a href="#sumber">Sumber Belajar</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Link (Anchor) -->
-<p>Kunjungi <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> untuk belajar HTML lebih lanjut.</p>
+    <!-- MAIN: Konten utama halaman -->
+    <main>
 
-<!-- Image (gambar dari internet — placeholder) -->
-<img src="https://placehold.co/600x300" alt="Contoh gambar placeholder" width="600" height="300">
+        <!-- SECTION: Mengapa HTML Penting -->
+        <section id="penting">
+            <h2>Mengapa HTML Penting</h2>
+            <p>HTML adalah bahasa dasar yang digunakan untuk membuat struktur halaman web.
+               Tanpa HTML, browser tidak bisa menampilkan teks, gambar, maupun link
+               dengan rapi dan terstruktur.</p>
+            <p>Memahami HTML sangat penting sebelum belajar CSS dan JavaScript.
+               Dengan HTML yang baik, pembuatan website akan menjadi lebih mudah
+               dan terstruktur sejak awal.</p>
+        </section>
 
-<!-- List tidak berurut (Unordered List) -->
-<h3>Tools yang Kita Gunakan:</h3>
-<ul>
-    <li>VS Code — editor kode</li>
-    <li>Live Server — preview otomatis</li>
-    <li>Browser — melihat hasil</li>
-    <li>GitHub — menyimpan kode</li>
-</ul>
+        <!-- SECTION: Tips Pertama -->
+        <section id="tips">
+            <h2>Tips Pertama</h2>
+            <ol>
+                <li>Pahami struktur dasar HTML seperti doctype, head, dan body.</li>
+                <li>Gunakan tag semantic agar struktur web mudah dibaca.</li>
+                <li>Selalu gunakan atribut alt pada setiap tag gambar.</li>
+                <li>Coba latihan membuat kodingan sederhana secara konsisten.</li>
+                <li>Cek hasil kodingan di W3C Validator untuk memastikan tidak ada error.</li>
+            </ol>
+        </section>
 
-<!-- List berurut (Ordered List) -->
-<h3>Langkah Instalasi:</h3>
-<ol>
-    <li>Download VS Code dari website resmi</li>
-    <li>Install ekstensi Live Server</li>
-    <li>Buat file index.html</li>
-    <li>Klik kanan → Open with Live Server</li>
-</ol>
+        <!-- SECTION: Kesalahan Umum -->
+        <section id="kesalahan">
+            <h2>Kesalahan Umum</h2>
+            <ul>
+                <li>
+                    <strong>Lupa Menutup Tag</strong>
+                    <p>Lupa menutup tag seperti tag p atau div bisa membuat tampilan web jadi berantakan.</p>
+                </li>
+                <li>
+                    <strong>Pakai Div Sembarangan</strong>
+                    <p>Menggunakan div untuk semua bagian tanpa menggunakan tag semantic seperti header atau section.</p>
+                </li>
+                <li>
+                    <strong>Lupa Atribut Alt Gambar</strong>
+                    <p>Memasang gambar tanpa atribut alt sehingga pembaca layar tidak bisa membaca deskripsi gambar.</p>
+                </li>
+                <li>
+                    <strong>Urutan Heading Berantakan</strong>
+                    <p>Menggunakan h1, h3, h2 secara tidak berurutan sehingga struktur dokumen kurang rapi.</p>
+                </li>
+            </ul>
+        </section>
 
-<!-- Horizontal Rule (garis pemisah) -->
-<hr>
+        <!-- SECTION: Sumber Belajar -->
+        <section id="sumber">
+            <h2>Sumber Belajar</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+                <li><a href="https://html.com" target="_blank" rel="noopener noreferrer">HTML.com</a></li>
+            </ul>
+        </section>
 
-<!-- Strong & Emphasis -->
-<p>HTML itu <strong>sangat penting</strong> untuk dipelajari karena fondasi semua website.</p>
-<p>Kamu pasti <em>bisa</em> menguasai ini!</p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Denmas Kartiko Anandika Purnomo. Dibuat untuk mata kuliah Desain Web.</p>
+    </footer>
+
 </body>
 </html>
